@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-color: black;
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.main-head{
+  color: lightskyblue;
+  text-align: center;
+  margin: 20px;
+}
+.main{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.search{
+  display: flex;
+  justify-content: center;
+}
+.search-contact{
+  background-color: white;
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid rgba(245, 239, 239, 0.888);
+  color: lightskyblue;
+}
+.card-container{
+  display: flex;
+   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;  
+  margin: 2px auto;
+  height: 40px;
+color: black;
+background-color: white;
+font-weight: bolder;
+width: 100%;
+
+}
+.add-click{
+  cursor: pointer;
+}
+.card-views{
+  display: flex;
+  border: 2px solid skyblue;
+ width: 60%;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 5px;
+  justify-content: space-around;
+}
+.show-edit-delete{
+  display: flex;
+  padding: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-style{
+  list-style-type: none;
+}
+.show-details{
+  cursor: pointer;
+}
+.delete{
+  cursor: pointer;
+}
+.id{
+  margin-top: 20px;
+  background:none;
+}
+.edit{
+  cursor: pointer;
 }
